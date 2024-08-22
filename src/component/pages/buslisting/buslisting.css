@@ -1,0 +1,39 @@
+.seat-map {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  background-color: #d3d3d3;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.seat.booked {
+  background-color: #0832db;
+  color: white;
+  cursor: not-allowed;
+}
+
+.seat.female-only {
+  border: 2px solid #ff69b4;
+}
+
+.seat.selected {
+  background-color: red;
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}

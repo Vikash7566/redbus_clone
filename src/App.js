@@ -5,6 +5,7 @@ import SignupModal from "./component/modals/SignupModal";
 import Home from "./component/pages/home/Home";
 import BusListingPage from "./component/pages/buslisting/BusListingPage";
 import { useState } from "react";
+import PaymentDetailsPage from "./component/pages/paymentdetails/PaymentDetailsPage";
 function App() {
   const [isLoginClicked, setIsLoginClicked] = useState(false);
   const handleLoginModal = () => {
@@ -119,6 +120,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/bus-listing" element={<BusListingPage />} />
+        <Route path="/payment-details" element={<PaymentDetailsPage />} />
       </Routes>
       {/* <Home /> */}
       {isLoginClicked && <LoginModal />}

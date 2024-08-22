@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import data from "../../../assets/data.js";
 import "./buslisting.css";
+import { Link } from "react-router-dom";
 
 const BusListingPage = () => {
   const [selectedSeats, setSelectedSeats] = useState([]);
@@ -19,7 +20,7 @@ const BusListingPage = () => {
         : [...prevSeats, seat.number]
     );
   };
-
+  console.log("selectedSeats", selectedSeats);
   const handleGenderToggle = () => {
     setIsFemale(!isFemale);
   };
@@ -161,7 +162,7 @@ const BusListingPage = () => {
                         Click on an available seat to proceed with your
                         transaction
                       </p>
-                      <div className="col-md-8">
+                      <div className="col-md-12">
                         {" "}
                         <p>Upper Deck</p>
                         {data.map((seat) => {
@@ -212,7 +213,23 @@ const BusListingPage = () => {
                           );
                         })}
                       </div>
-                      <div className="col-md-4"></div>
+                      {/* <div className="col-md-4">s
+                        <p className="primary-bg color-fff">Seat Legend</p>
+                      </div> */}
+                      <button
+                        className="primary-bg b-0"
+                        style={{ borderRadius: "10px" }}
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <Link
+                          className="text-decoration-none color-fff"
+                          to="/payment-details"
+                          state={{ selectedSeats }}
+                        >
+                          Proceed to Pay
+                        </Link>
+                      </button>
                     </div>
                   </div>
                 </div>

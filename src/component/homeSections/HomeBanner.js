@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const HomeBanner = () => {
   return (
@@ -98,7 +99,12 @@ const HomeBanner = () => {
           <div className="col-md-3 text-center">
             {" "}
             <button class="btn " type="button" id="button-addon1 ">
-              Search Buses
+              <Link
+                className="link-body-emphasis text-decoration-none"
+                to={"/bus-listing"}
+              >
+                Search Buses
+              </Link>
             </button>
           </div>
         </div>

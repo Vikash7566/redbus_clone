@@ -29,7 +29,7 @@ const SignupModal = () => {
                 id="floatingInput"
                 placeholder="name@example.com"
               />
-              <label for="floatingInput">Email address</label>
+              <label>Email address</label>
             </div>
             <div class="form-floating">
               <input
@@ -38,7 +38,7 @@ const SignupModal = () => {
                 id="floatingPassword"
                 placeholder="Password"
               />
-              <label for="floatingPassword">Password</label>
+              <label>Password</label>
             </div>
             <div class="form-floating  my-4">
               <input
@@ -47,7 +47,7 @@ const SignupModal = () => {
                 id="floatingPassword"
                 placeholder="re-type Password"
               />
-              <label for="floatingPassword">Password re-type</label>
+              <label>Password re-type</label>
             </div>
 
             <button class="btn btn-primary primary-bg w-100 py-2" type="submit">

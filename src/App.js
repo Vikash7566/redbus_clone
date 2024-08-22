@@ -1,8 +1,15 @@
+import { Route, Routes } from "react-router-dom";
 import "./assets/css/common.css";
 import LoginModal from "./component/modals/LoginModal";
 import SignupModal from "./component/modals/SignupModal";
 import Home from "./component/pages/home/Home";
+import BusListingPage from "./component/pages/buslisting/BusListingPage";
+import { useState } from "react";
 function App() {
+  const [isLoginClicked, setIsLoginClicked] = useState(false);
+  const handleLoginModal = () => {
+    setIsLoginClicked(true);
+  };
   return (
     <div className="App">
       <header className="p-3 border-bottom">
@@ -97,8 +104,9 @@ function App() {
                   <a
                     className="dropdown-item "
                     data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop"
+                    data-bs-target="#LoginModal"
                     href="#"
+                    onClick={() => handleLoginModal}
                   >
                     Login / Signup
                   </a>
@@ -108,10 +116,13 @@ function App() {
           </div>
         </div>
       </header>
-
-      <Home />
-      <LoginModal />
-      <SignupModal />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/bus-listing" element={<BusListingPage />} />
+      </Routes>
+      {/* <Home /> */}
+      {isLoginClicked && <LoginModal />}
+      {<SignupModal />}
     </div>
   );
 }

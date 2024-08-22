@@ -1,0 +1,17 @@
+.homeBanner {
+  background-image: "url(/img/Homepage-header-1600.webp)";
+  background-repeat: "no-repeat";
+  min-height: "102vh";
+  display: "flex";
+  justify-content: "flex-end";
+  align-items: "center";
+  flex-direction: "column";
+}
+.searchBuses {
+  display: "flex";
+  justify-content: "center";
+  margin-bottom: "12rem";
+  background: "#fff";
+  border-radius: "20px";
+  max-width: "56rem";
+}

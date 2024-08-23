@@ -16,3 +16,10 @@
 .p-8 {
   padding: 8px;
 }
+
+.d-flex {
+  display: flex;
+}
+.justify-content-center {
+  justify-content: center;
+}

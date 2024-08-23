@@ -1,32 +1,21 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import PayentDetails from "../../common/PayentDetails";
+import { Link } from "react-router-dom";
 
 const PaymentDetailsPage = () => {
-  const location = useLocation();
-  const seats = location?.state?.selectedSeats;
   return (
-    // <div>
-    //   <h1>Seat : {seats.join(",")}</h1>
-    //   <h1>Amount :{seats.length * 300} </h1>
-    //   <button>Fail</button>
-    //   <button>Success </button>
-    // </div>
     <section className="py-5 text-center container">
       <div className="row py-lg-5">
         <div className="col-lg-6 col-md-8 mx-auto">
-          <h1 className="fw-light">Album example</h1>
-          <p className="lead text-body-secondary">
-            Something short and leading about the collection below—its contents,
-            the creator, etc. Make it short and sweet, but not too short so
-            folks don’t simply skip over it entirely.
-          </p>
+          <h1 className="fw-light">Intercity Travel Mumbai</h1>
+          <PayentDetails />
           <p>
-            <a href="#" className="btn btn-primary my-2">
-              Main call to action
-            </a>
-            <a href="#" className="btn btn-secondary my-2">
-              Secondary action
-            </a>
+            <Link to="/fail" className="btn btn-secondary mx-2 my-2">
+              Fail
+            </Link>
+            <Link to="/success" className="btn btn-primary my-2 mx-2">
+              Success
+            </Link>
           </p>
         </div>
       </div>

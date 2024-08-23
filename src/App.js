@@ -6,6 +6,8 @@ import Home from "./component/pages/home/Home";
 import BusListingPage from "./component/pages/buslisting/BusListingPage";
 import { useEffect, useState } from "react";
 import PaymentDetailsPage from "./component/pages/paymentdetails/PaymentDetailsPage";
+import Fail from "./component/pages/fail/Fail";
+import Success from "./component/pages/success/Success";
 function App() {
   const [show, setShow] = useState(false);
   const [signupShow, setSignupShow] = useState(false);
@@ -133,6 +135,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/bus-listing" element={<BusListingPage />} />
         <Route path="/payment-details" element={<PaymentDetailsPage />} />
+        <Route path="/fail" element={<Fail />} />
+        <Route path="/success" element={<Success />} />
       </Routes>
       {/* <Home /> */}
       {show && (

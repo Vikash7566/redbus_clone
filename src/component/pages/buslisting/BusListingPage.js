@@ -27,8 +27,198 @@ const BusListingPage = () => {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-md-4">sidebar</div>
-        <div className="col-md-8">
+        <div className="col-md-2">
+          {/* <div>
+            <h6 className="mt-3">Live Tracking(15)</h6>
+          </div>
+          <div>
+            <h6>Departure Time</h6>
+            <p>Before 6am</p>
+            <p>6am to 12pm</p>
+            <p>12pm to 6pm</p>
+            <p>after 6pm</p>
+          </div> */}
+          <div className="flex-shrink-0 p-3" style={{ width: "280px;" }}>
+            <a
+              href="/"
+              className="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom"
+            >
+              <span className="fs-5 fw-semibold">Live Tracking(15)</span>
+            </a>
+            <ul className="list-unstyled ps-0">
+              <li className="mb-1">
+                <button
+                  className="btn btn-toggle d-inline-flex align-items-center rounded border-0"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#home-collapse"
+                  aria-expanded="true"
+                >
+                  Departure Time
+                </button>
+                <div className="collapse show" id="home-collapse">
+                  <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li>
+                      <a
+                        href="#"
+                        className="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                      >
+                        Departure Time
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                      >
+                        Before 6am
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                      >
+                        6am to 12pm
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                      >
+                        12pm to 6pm
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                      >
+                        after 6pm
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li className="mb-1">
+                <button
+                  className="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#dashboard-collapse"
+                  aria-expanded="false"
+                >
+                  Bus Type
+                </button>
+                <div className="collapse" id="dashboard-collapse">
+                  <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li>
+                      <a
+                        href="#"
+                        className="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                      >
+                        Seater
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                      >
+                        Sleeper
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                      >
+                        AC
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li className="mb-1">
+                <button
+                  className="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#orders-collapse"
+                  aria-expanded="false"
+                >
+                  Seat Availablity
+                </button>
+                <div className="collapse" id="orders-collapse">
+                  <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li>
+                      <a
+                        href="#"
+                        className="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                      >
+                        Single Seat(9)
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li className="border-top my-3"></li>
+              <li className="mb-1">
+                <button
+                  className="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#account-collapse"
+                  aria-expanded="false"
+                >
+                  Arrival time
+                </button>
+                <div className="collapse show" id="home-collapse">
+                  <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li>
+                      <a
+                        href="#"
+                        className="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                      >
+                        Departure Time
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                      >
+                        Before 6am
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                      >
+                        6am to 12pm
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                      >
+                        12pm to 6pm
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                      >
+                        after 6pm
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="col-md-10">
           <div className="row">
             <div className="col-sm-3 mb-3 mb-sm-0">
               <div className="card">
@@ -93,7 +283,7 @@ const BusListingPage = () => {
             </div>
           </div>
           <div>
-            <table class="table">
+            <table className="table">
               <thead>
                 <tr>
                   <th scope="col">Sort By:</th>
@@ -138,7 +328,7 @@ const BusListingPage = () => {
               </tbody>
             </table>
             <div
-              class="modal fade"
+              className="modal fade"
               id="staticBackdrop"
               data-bs-backdrop="static"
               data-bs-keyboard="false"
@@ -146,17 +336,17 @@ const BusListingPage = () => {
               aria-labelledby="staticBackdropLabel"
               aria-hidden="true"
             >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
+              <div className="modal-dialog">
+                <div className="modal-content">
+                  <div className="modal-header">
                     <button
                       type="button"
-                      class="btn-close"
+                      className="btn-close"
                       data-bs-dismiss="modal"
                       aria-label="Close"
                     ></button>
                   </div>
-                  <div class="modal-body">
+                  <div className="modal-body">
                     <div className="row">
                       <p>
                         Click on an available seat to proceed with your
@@ -171,7 +361,7 @@ const BusListingPage = () => {
                               {seat.id <= 48 && (
                                 <button
                                   key={seat.id}
-                                  className={`seat
+                                  className={`seat text-center
                             ${seat.isBooked ? "booked" : ""}
                             ${seat.isFemaleOnly ? "female-only" : ""}
                              ${
@@ -195,7 +385,7 @@ const BusListingPage = () => {
                               {seat.id > 48 && (
                                 <button
                                   key={seat.id}
-                                  className={`seat
+                                  className={`seat text-center
                           ${seat.isBooked ? "booked" : ""}
                           ${seat.isFemaleOnly ? "female-only" : ""}
                            ${

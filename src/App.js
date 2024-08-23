@@ -85,7 +85,7 @@ function App() {
                 aria-expanded="false"
               >
                 <img
-                  src="https://github.com/mdo.png"
+                  src="img/dummy.png"
                   alt="mdo"
                   width="32"
                   height="32"
@@ -93,11 +93,6 @@ function App() {
                 />
               </a>
               <ul className="dropdown-menu text-small">
-                <li>
-                  <a className="dropdown-item" href="#">
-                    New project...
-                  </a>
-                </li>
                 <li>
                   <a className="dropdown-item" href="#">
                     Settings

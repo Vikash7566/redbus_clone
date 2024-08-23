@@ -28,7 +28,7 @@ const HomeBanner = () => {
       >
         <div className="row">
           <div className="col-md-3">
-            <div class="input-group mb-3">
+            <div class="input-group mb-3 mt-3">
               <button class="btn " type="button" id="button-addon1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -50,8 +50,8 @@ const HomeBanner = () => {
               />
             </div>
           </div>
-          <div className="col-md-3">
-            <div class="input-group mb-3">
+          <div className="col-md-3 ">
+            <div class="input-group mb-3 mt-3">
               <button class="btn " type="button" id="button-addon1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +74,7 @@ const HomeBanner = () => {
             </div>
           </div>
           <div className="col-md-3">
-            <div class="input-group mb-3">
+            <div class="input-group mb-3 mt-3">
               <button class="btn " type="button" id="button-addon1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -96,8 +96,7 @@ const HomeBanner = () => {
               />
             </div>
           </div>
-          <div className="col-md-3 text-center">
-            {" "}
+          <div className="col-md-3 text-center mt-3">
             <button class="btn " type="button" id="button-addon1 ">
               <Link
                 className="link-body-emphasis text-decoration-none"

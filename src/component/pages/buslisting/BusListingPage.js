@@ -123,7 +123,7 @@ const BusListingPage = () => {
                     <small>Delhi</small>
                   </td>
                   <td>3.5/5</td>
-                  <td>Start From INR 312</td>
+                  <td>Start From INR 300</td>
                   <td>
                     86 Seats Available
                     <button

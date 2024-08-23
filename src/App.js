@@ -1,35 +1,43 @@
-import { Route, Routes } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 import "./assets/css/common.css";
 import LoginModal from "./component/modals/LoginModal";
 import SignupModal from "./component/modals/SignupModal";
 import Home from "./component/pages/home/Home";
 import BusListingPage from "./component/pages/buslisting/BusListingPage";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import PaymentDetailsPage from "./component/pages/paymentdetails/PaymentDetailsPage";
 function App() {
-  const [isLoginClicked, setIsLoginClicked] = useState(false);
-  const handleLoginModal = () => {
-    setIsLoginClicked(true);
+  const [show, setShow] = useState(false);
+  const [signupShow, setSignupShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  const handleSignupShow = () => setSignupShow(true);
+  const handleSignupClose = () => setSignupShow(false);
+
+  let isLogin = localStorage.getItem("isLoggedIn");
+
+  const handleLogout = () => {
+    isLogin = localStorage.removeItem("isLoggedIn");
   };
   return (
     <div className="App">
       <header className="p-3 border-bottom">
         <div className="container">
           <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a
-              href="/"
+            <Link
+              to="/"
               className="d-flex align-items-center mb-2 mb-lg-0  text-decoration-none"
-            ></a>
+            ></Link>
 
             <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
               <li>
-                <a href="#" className="nav-link px-2">
+                <Link to="/" className="nav-link px-2">
                   <img
                     src="/img/rdc-redbus-logo.webp"
                     alt="rdc-redbus-logo"
                     width={60}
                   />
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#" className="nav-link px-2 link-body-emphasis">
@@ -102,15 +110,19 @@ function App() {
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <a
-                    className="dropdown-item "
-                    data-bs-toggle="modal"
-                    data-bs-target="#LoginModal"
-                    href="#"
-                    onClick={() => handleLoginModal}
-                  >
-                    Login / Signup
-                  </a>
+                  {isLogin ? (
+                    <a
+                      className="dropdown-item "
+                      href="#"
+                      onClick={handleLogout}
+                    >
+                      Logout
+                    </a>
+                  ) : (
+                    <a className="dropdown-item " href="#" onClick={handleShow}>
+                      Login / Signup
+                    </a>
+                  )}
                 </li>
               </ul>
             </div>
@@ -123,8 +135,19 @@ function App() {
         <Route path="/payment-details" element={<PaymentDetailsPage />} />
       </Routes>
       {/* <Home /> */}
-      {isLoginClicked && <LoginModal />}
-      {<SignupModal />}
+      {show && (
+        <LoginModal
+          show={show}
+          handleClose={handleClose}
+          handleSignupShow={handleSignupShow}
+        />
+      )}
+      {signupShow && (
+        <SignupModal
+          signupShow={signupShow}
+          handleSignupClose={handleSignupClose}
+        />
+      )}
     </div>
   );
 }

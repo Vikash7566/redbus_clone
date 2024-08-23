@@ -66,15 +66,14 @@ function App() {
                 Help
               </a>
             </div>
-            <div className="dropdown text-end px-4">
-              <a
-                href="#"
+            <div className="dropdown px-4">
+              <Link
+                to="/"
                 className="d-block link-body-emphasis text-decoration-none dropdown-toggle"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                // data-bs-toggle="dropdown"
               >
                 Manage Booking
-              </a>
+              </Link>
             </div>
 
             <div className="dropdown text-end">

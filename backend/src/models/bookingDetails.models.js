@@ -10,12 +10,12 @@ const BookingRecordSchema = mongoose.Schema({
     require: true,
   },
   mobileNumber: {
-    type: Number,
+    type: String,
     unique: true,
     require: true,
   },
   seatNumber: {
-    type: Number,
+    type: String,
     require: true,
   },
   state: {
@@ -27,7 +27,7 @@ const BookingRecordSchema = mongoose.Schema({
     require: true,
   },
   gender: {
-    type: Boolean,
+    type: String,
     require: true,
   },
   price: {

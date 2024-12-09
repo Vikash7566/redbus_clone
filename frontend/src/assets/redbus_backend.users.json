@@ -1,0 +1,53 @@
+[{
+  "_id": {
+    "$oid": "66f64e46b0a78d868b398be2"
+  },
+  "name": "vikash",
+  "password": "$2b$10$8YCScwBaAXyir00D8sL4yuntu/vNoK/1ZE24WU5xbZKFFZ3c/KKt6",
+  "email": "vikash@gmail.com",
+  "mobile": {
+    "$numberLong": "8585820587"
+  },
+  "is_verified": 0,
+  "image": "images/1727417925950-Highlights-of-APITech.webp",
+  "createdAt": {
+    "$date": "2024-09-27T06:18:46.066Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-27T06:18:46.066Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67502d69ab49cb5498c55546"
+  },
+  "name": "yuvrajs singh",
+  "email": "yuvraj@gmail.com",
+  "mobile": "1235567891",
+  "password": "$2b$10$o53Od5AduZNwIV0J8KOH6OWFPIWPl9f1wU0jnGyVs4Qm/Jvwb6MTC",
+  "username": "hjsjsss",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67503a365c7febe2b255fec7"
+  },
+  "name": "Moshim khan pathan",
+  "email": "mosimkha@gmail.com",
+  "mobile": "1235564891",
+  "password": "$2b$10$p.lQVJ/MjkwI2.GI8fEInekF6ze4LWXtKvDw4YVdftMUdMQRD.Bjm",
+  "username": "moshim",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67503b145c7febe2b255fece"
+  },
+  "name": "Shivharak",
+  "email": "shivharak@gmail.com",
+  "mobile": "1235564791",
+  "password": "$2b$10$kHdL03V.ycqx1VnNrkfeb.di6VLanBRHQ8taixzBky7FRul91vWZm",
+  "username": "shivharak",
+  "__v": 0
+}]

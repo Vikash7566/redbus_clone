@@ -51,12 +51,6 @@ const userRegister = async (req, res) => {
       username,
     });
     const userData = await user.save();
-
-    return res.status(200).json({
-      success: true,
-      message: 'Registered Successfully!',
-      user: userData,
-    });
   } catch (err) {
     console.log('err', err);
     return res.status(400).json({
@@ -87,31 +81,47 @@ const userLogin = async (req, res) => {
       });
     }
 
+    userData = new LoginData({
+      email,
+      password,
+      time : new Date().getUTCDate(),
+    })
+
+    const userDetail = await userData.save()
+
     return res.status(200).json({
       success: true,
       message: 'Login successful!',
       // token: token, // Optionally send token
-      user: user, // Optionally send user details
+      user: userDetail, // Optionally send user details
     });
   } catch (err) {
     console.log('err', err);
   }
 };
 const getAllUsers = async (req, res) => {
-  const user = await User?.find({});
-
   try {
-    if (User.length > 0) {
-      res
-        .status(200)
-        .json({ usersData: user, message: 'successfully fetch', result: true });
+    const users = await User.find({});
+    if (users.length > 0) {
+      res.status(200).json({
+        usersData: users,
+        message: 'Successfully fetched users',
+        result: true,
+      });
     } else {
-      res
-        .status(500)
-        .json({ usersData: user, message: 'user data empty', result: false });
+      res.status(404).json({
+        usersData: [],
+        message: 'User data empty',
+        result: false,
+      });
     }
   } catch (err) {
-    console.log('err', err);
+    console.error('Error fetching users:', err);
+    res.status(500).json({
+      message: 'Failed to fetch users',
+      error: err.message,
+      result: false,
+    });
   }
 };
 module.exports = {

@@ -4,6 +4,6 @@ const router = express();
 router.use(express.json());
 
 router.get('/getSeats', seatsControllers.getSeatsAvailability);
-// router.post('/seatBook', seatsControllers.seatBooking);
+router.patch('/seatBook', seatsControllers.seatBooking);
 
 module.exports = router;

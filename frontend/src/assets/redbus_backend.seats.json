@@ -1,0 +1,520 @@
+[{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198521"
+  },
+  "id": 1,
+  "seatNumber": "A1",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198522"
+  },
+  "id": 2,
+  "seatNumber": "A2",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198523"
+  },
+  "id": 3,
+  "seatNumber": "A3",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198524"
+  },
+  "id": 4,
+  "seatNumber": "A4",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198525"
+  },
+  "id": 5,
+  "seatNumber": "B1",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198526"
+  },
+  "id": 6,
+  "seatNumber": "B2",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198527"
+  },
+  "id": 7,
+  "seatNumber": "B3",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198528"
+  },
+  "id": 8,
+  "seatNumber": "B4",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198529"
+  },
+  "id": 9,
+  "seatNumber": "C1",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c019852a"
+  },
+  "id": 10,
+  "seatNumber": "C2",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c019852b"
+  },
+  "id": 11,
+  "seatNumber": "C3",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c019852c"
+  },
+  "id": 12,
+  "seatNumber": "C4",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c019852d"
+  },
+  "id": 13,
+  "seatNumber": "D1",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c019852e"
+  },
+  "id": 14,
+  "seatNumber": "D2",
+  "isBooked": true,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c019852f"
+  },
+  "id": 15,
+  "seatNumber": "D3",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198530"
+  },
+  "id": 16,
+  "seatNumber": "D4",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198531"
+  },
+  "id": 17,
+  "seatNumber": "E1",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198532"
+  },
+  "id": 18,
+  "seatNumber": "E2",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198533"
+  },
+  "id": 19,
+  "seatNumber": "E3",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198534"
+  },
+  "id": 20,
+  "seatNumber": "E4",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198535"
+  },
+  "id": 21,
+  "seatNumber": "F1",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198536"
+  },
+  "id": 22,
+  "seatNumber": "F2",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198537"
+  },
+  "id": 23,
+  "seatNumber": "F3",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198538"
+  },
+  "id": 24,
+  "seatNumber": "F4",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198539"
+  },
+  "id": 25,
+  "seatNumber": "G1",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c019853a"
+  },
+  "id": 26,
+  "seatNumber": "G2",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c019853b"
+  },
+  "id": 27,
+  "seatNumber": "G3",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c019853c"
+  },
+  "id": 28,
+  "seatNumber": "G4",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c019853d"
+  },
+  "id": 29,
+  "seatNumber": "H1",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c019853e"
+  },
+  "id": 30,
+  "seatNumber": "H2",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c019853f"
+  },
+  "id": 31,
+  "seatNumber": "H3",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198540"
+  },
+  "id": 32,
+  "seatNumber": "H4",
+  "isBooked": false,
+  "isFemaleOnly": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198541"
+  },
+  "id": 33,
+  "seatNumber": "I1",
+  "isBooked": false,
+  "isFemaleOnly": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198542"
+  },
+  "id": 34,
+  "seatNumber": "I2",
+  "isBooked": false,
+  "isFemaleOnly": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198543"
+  },
+  "id": 35,
+  "seatNumber": "I3",
+  "isBooked": true,
+  "isFemaleOnly": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198544"
+  },
+  "id": 36,
+  "seatNumber": "I4",
+  "isBooked": false,
+  "isFemaleOnly": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198545"
+  },
+  "id": 37,
+  "seatNumber": "J1",
+  "isBooked": false,
+  "isFemaleOnly": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198546"
+  },
+  "id": 38,
+  "seatNumber": "J2",
+  "isBooked": true,
+  "isFemaleOnly": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198547"
+  },
+  "id": 39,
+  "seatNumber": "J3",
+  "isBooked": false,
+  "isFemaleOnly": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198548"
+  },
+  "id": 40,
+  "seatNumber": "J4",
+  "isBooked": false,
+  "isFemaleOnly": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198549"
+  },
+  "id": 41,
+  "seatNumber": "K1",
+  "isBooked": false,
+  "isFemaleOnly": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c019854a"
+  },
+  "id": 42,
+  "seatNumber": "K2",
+  "isBooked": false,
+  "isFemaleOnly": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c019854b"
+  },
+  "id": 43,
+  "seatNumber": "K3",
+  "isBooked": false,
+  "isFemaleOnly": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c019854c"
+  },
+  "id": 44,
+  "seatNumber": "K4",
+  "isBooked": false,
+  "isFemaleOnly": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c019854d"
+  },
+  "id": 45,
+  "seatNumber": "L1",
+  "isBooked": false,
+  "isFemaleOnly": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c019854e"
+  },
+  "id": 46,
+  "seatNumber": "L2",
+  "isBooked": true,
+  "isFemaleOnly": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c019854f"
+  },
+  "id": 47,
+  "seatNumber": "L3",
+  "isBooked": false,
+  "isFemaleOnly": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198550"
+  },
+  "id": 48,
+  "seatNumber": "L4",
+  "isBooked": false,
+  "isFemaleOnly": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198551"
+  },
+  "id": 49,
+  "seatNumber": "M1",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198552"
+  },
+  "id": 50,
+  "seatNumber": "M2",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198553"
+  },
+  "id": 51,
+  "seatNumber": "M3",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6752f2d51e6b3425c0198554"
+  },
+  "id": 52,
+  "seatNumber": "M4",
+  "isBooked": false,
+  "isFemaleOnly": false,
+  "__v": 0
+}]

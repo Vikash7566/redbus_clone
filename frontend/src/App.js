@@ -21,7 +21,6 @@ function App() {
   const handleLogout = () => {
     isLogin = localStorage.removeItem('isLoggedIn');
   };
-  console.log('isLogin', isLogin);
   return (
     <div className='App'>
       <header className='p-3 border-bottom'>
